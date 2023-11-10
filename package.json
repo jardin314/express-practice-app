@@ -1,0 +1,9 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "Basic CRUD app",
+  "main": "index.ts",
+  "repository": "git@gitlab.com:jordanCoe/express-app.git",
+  "author": "Jordan Coe <jcoe@mynetsvs.com>",
+  "license": "MIT"
+}
