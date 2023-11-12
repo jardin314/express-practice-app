@@ -13,6 +13,18 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!')
 })
 
+app.put('/', (req: Request, res: Response) => {
+  res.send('You just posted!')
+})
+
+app.get('/', (req: Request, res: Response) => {
+  res.send('Get got!')
+})
+
+app.delete('/', (req: Request, res: Response) => {
+  res.send('Delet this')
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
