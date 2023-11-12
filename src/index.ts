@@ -10,10 +10,11 @@ const app: Application = express()
 const port = 3000
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!')
+  const currentDate: Date = new Date(Date.now())
+  res.send(`The current date is ${currentDate.toString()}`)
 })
 
-app.put('/', (req: Request, res: Response) => {
+/* app.put('/', (req: Request, res: Response) => {
   res.send('You just posted!')
 })
 
@@ -23,7 +24,7 @@ app.get('/', (req: Request, res: Response) => {
 
 app.delete('/', (req: Request, res: Response) => {
   res.send('Delet this')
-})
+}) */
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
