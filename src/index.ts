@@ -1,11 +1,15 @@
-import {
-  express,
+import type {
+  Application,
+  Request,
+  Response,
 } from 'express'
 
-const app = express()
+import express  from 'express'
+
+const app: Application = express()
 const port = 3000
 
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!')
 })
 
