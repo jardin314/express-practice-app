@@ -9,10 +9,13 @@ import express  from 'express'
 const app: Application = express()
 const port = 3000
 
+app.use(express.static('static'))
+
 app.get('/', (req: Request, res: Response) => {
   const currentDate: Date = new Date(Date.now())
-  res.send(`The current date is ${currentDate.toString()}`)
+  res.send()
 })
+
 
 /* app.put('/', (req: Request, res: Response) => {
   res.send('You just posted!')
