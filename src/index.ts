@@ -9,11 +9,11 @@ import express  from 'express'
 const app: Application = express()
 const port = 3000
 
-app.use(express.static('static'))
+app.use(express.static('src/static'))
 
 app.get('/', (req: Request, res: Response) => {
   const currentDate: Date = new Date(Date.now())
-  res.send()
+  res.send(`The current date is ${currentDate}`)
 })
 
 
